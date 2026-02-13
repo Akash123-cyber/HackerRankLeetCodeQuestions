@@ -766,7 +766,7 @@ At most 2 * 10^5 calls will be made to get and put
 
 ---
 
-# Question 12: ## 225. Implement Stack using Queues  
+# Question 13: ## 225. Implement Stack using Queues  
 **Difficulty:** Easy  
 
 ---
@@ -827,3 +827,79 @@ pop and top are always valid
 ## Solution: 
 
 @import "LeetCode225ImplementStackUsingQueues.java"
+
+---
+
+# Question 14: LeetCode 2095. Delete the Middle Node of a Linked List  
+**Difficulty:** Medium  
+
+---
+
+### 📌 Problem
+
+You are given the `head` of a linked list.  
+Delete the **middle node**, and return the head of the modified list.
+
+The middle node of a list of size `n` is the:
+
+- ⌊n / 2⌋th node (0-based indexing)
+
+For example:
+
+- n = 1 → middle = 0  
+- n = 2 → middle = 1  
+- n = 3 → middle = 1  
+- n = 4 → middle = 2  
+- n = 5 → middle = 2  
+
+---
+
+### Example 1
+
+**Input**
+```text
+head = [1,3,4,7,1,2,6]
+```
+
+**Output**
+
+[1,3,4,1,2,6]
+
+
+**Explanation**:
+```text
+n = 7 → middle index = 3 → node value = 7 is removed.
+```
+
+### Example 2
+
+
+**Input :** head = [1,2,3,4]
+
+**Output :** [1,2,4]
+
+**Explanation**:
+```text
+n = 4 → middle index = 2 → node value = 3 is removed.
+```
+### Example 3
+
+**Input :** head = [2,1]
+
+**Output :** [2]
+
+**Explanation**:
+```text
+n = 2 → middle index = 1 → node value = 1 is removed.
+```
+
+**Constraints**
+```text
+Number of nodes: [1, 10^5]
+
+1 <= Node.val <= 10^5
+```
+
+## Solution: 
+
+@import "LeetCode2095DeletetheMiddleNodeofLinkedList.java"
