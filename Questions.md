@@ -972,3 +972,56 @@ n == matrix[i].length
 ## Solution:
 
 @import "LeetCode74BinarySearch2DMatrix.java"
+
+---
+
+# Question 16: LeetCode 3159 Find Occurrences of an Element in an Array
+
+You are given:
+
+- an integer array `nums`
+- an integer array `queries`
+- an integer `x`
+
+---
+
+### Task
+
+For each `queries[i]`, you need to find the index of the **queries[i]-th occurrence** of `x` in the `nums` array.
+
+- If there are **fewer than `queries[i]` occurrences** of `x`, return `-1` for that query.
+
+Return an integer array `answer` containing the results for all queries.
+
+---
+
+### Example 1
+
+**Input:**
+
+- `nums = [1, 3, 1, 7]`
+- `queries = [1, 3, 2, 4]`
+- `x = 1`
+
+**Output:**
+
+```text
+[0, -1, 2, -1]
+```
+
+**Explanation**:
+
+```
+- Query 1: The 1st occurrence of 1 is at index 0
+- Query 3: There are only 2 occurrences, so answer is -1
+- Query 2: The 2nd occurrence of 1 is at index 2
+- Query 4: Only 2 occurrences, so answer is -1
+```
+
+## Solution:
+
+@import "LeetCode3159FindOccurencesOfElement.java"
+
+## More Optimised Solution:
+
+@import "OptimisedLeetCode3159FindOccurencesOfElement.java"
