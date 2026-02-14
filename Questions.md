@@ -1086,4 +1086,81 @@ nums = [], target = 0
 
 @import "OptimisedLeetCode34FindFirstAndLastPositions.java"
 
+---
 
+# Question 17: LeetCode 240. Search a 2D Matrix II
+
+You are given an `m x n` integer matrix `matrix`.
+
+Write an efficient algorithm to search for a value `target` in the matrix.
+
+---
+
+### Matrix Properties
+
+The matrix has the following properties:
+
+1. Integers in each row are sorted in ascending order from left to right.
+2. Integers in each column are sorted in ascending order from top to bottom.
+
+---
+
+### Example 1
+
+**Input:**
+```maths
+matrix =  
+[[1, 4, 7, 11, 15],  
+ [2, 5, 8, 12, 19],  
+ [3, 6, 9, 16, 22],  
+ [10, 13, 14, 17, 24],  
+ [18, 21, 23, 26, 30]]
+```
+
+target = 5
+
+**Output:**
+
+true
+
+---
+
+### Example 2
+
+**Input:**
+
+```maths
+matrix =  
+[[1, 4, 7, 11, 15],  
+ [2, 5, 8, 12, 19],  
+ [3, 6, 9, 16, 22],  
+ [10, 13, 14, 17, 24],  
+ [18, 21, 23, 26, 30]]
+```
+target = 20
+
+**Output:**
+
+false
+
+---
+
+### Constraints
+
+- m == matrix.length  
+- n == matrix[i].length  
+- 1 <= m, n <= 300  
+- -10^9 <= matrix[i][j] <= 10^9  
+- All integers in each row are sorted in ascending order  
+- All integers in each column are sorted in ascending order  
+- -10^9 <= target <= 10^9
+
+
+## Solution: 
+
+@import "LeetCode240SearchA2DMatrix.java"
+
+
+## Optimised Solution: Using Properties of the give array we will iterate in a zig - zag fashion from Top - right of the matrix;
+
+@import "OptimisedLeetCode240SearchA2DMatrix.java"
