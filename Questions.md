@@ -1310,5 +1310,108 @@ Sum = 5 + 8 + 4 + 5 = 22
 ## Solution : 
 @import "LeetCode113PathSum.java"
 
-#Question 20: LeetCode 347 Top K Frequent Elements
+# Question 20: 🌳 129. Sum Root to Leaf Numbers
+
+**Difficulty:** Medium  
+**Topics:** Binary Tree, DFS, Backtracking  
+**Companies:** Frequently Asked  
+
+---
+
+## 📌 Problem Statement
+
+You are given the root of a binary tree containing digits from **0 to 9** only.
+
+Each **root-to-leaf path** in the tree represents a number.
+
+For example:
+
+- The path `1 → 2 → 3` represents the number **123**
+
+Return the **total sum** of all root-to-leaf numbers.
+
+Test cases are generated so that the answer will fit in a **32-bit integer**.
+
+---
+
+## ✅ Definition
+
+A **leaf node** is a node with no children.
+
+A **root-to-leaf path** starts at the root and ends at any leaf node.
+
+---
+
+## ✨ Examples
+
+---
+
+### Example 1
+
+**Input:**
+
+```text
+root = [1,2,3]
+```
+
+**Output**: 25
+
+
+**Explanation**:
+
+```text
+Root-to-leaf paths:
+
+1 → 2 represents 12
+
+1 → 3 represents 13
+
+So the total sum is:
+
+12 + 13 = 25
+```
+
+### Example 2
+
+**Input**:
+
+```text
+root = [4,9,0,5,1]
+```
+
+**Output**: 1026
+
+
+**Explanation**:
+
+```text
+Root-to-leaf paths:
+
+4 → 9 → 5 represents 495
+
+4 → 9 → 1 represents 491
+
+4 → 0 represents 40
+
+So the total sum is:
+
+495 + 491 + 40 = 1026
+
+```
+
+**🧾 Constraints**
+
+```text
+The number of nodes in the tree is in the range [1, 1000]
+
+0 <= Node.val <= 9
+
+The depth of the tree will not exceed 10
+```
+
+## Solution :
+
+@import "LeetCode129SumRoottoLeafNumbers.java"
+
+#Question 21: LeetCode 347 Top K Frequent Elements
 
